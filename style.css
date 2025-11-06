@@ -86,3 +86,38 @@ ul {
 .hover-link:hover {
   color: var(--accent-color);
 }
+.primary-btn{
+  padding: 12px 24px;
+  background-color: var(--accent-color);
+  color: white !important;
+  border: 6px;
+  font-weight: 700;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+}
+.primary-btn:hover{
+  background-color: var(--secondary-text-color);
+}
+.secondary-btn{
+  padding: 12px 24px;
+  border: 0.5px solid var(--secondary-text-color);
+  color: var(--accent-color) !important;
+  font-weight: 700;
+  border-radius: 6px;
+}
+.secondary-btn:hover{
+  background-color: var(--accent-color-dark);
+  color: var(--accent-color) !important;
+}
+.section-gap {
+  padding: 50px var(--padding-inline-section);
+}
+/* he section */
+.header-left {
+  width: 40vw;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+}
+.header-right img {
+ width: 100%;
+}
