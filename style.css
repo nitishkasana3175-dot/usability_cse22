@@ -68,56 +68,109 @@ ul {
 .logo img {
   width: 200px;
 }
-.main-nav{
+.main-nav {
   margin-top: 20px;
   justify-content: space-between;
 }
-.hover-links  {
- flex-basis:730px;
+.hover-links {
+  flex-basis: 730px;
 }
-.hover-links ul  {
+.hover-links ul {
   justify-content: end;
   gap: 40px;
 }
-.hover-links{
-    color: var(--primary-text-color);
-    text-transform: capitalize;
+
+.hover-link {
+  color: var(--primary-text-color);
+  text-transform: capitalize;
+  transition: 0.2s ease-out;
 }
 .hover-link:hover {
   color: var(--accent-color);
 }
-.primary-btn{
-  padding: 12px 24px;
+
+.primary-btn {
   background-color: var(--accent-color);
-  color: white !important;
   border: 6px;
   font-weight: 700;
-  box-shadow: 0 0 2px var(--secondary-text-color);
-}
-.primary-btn:hover{
-  background-color: var(--secondary-text-color);
-}
-.secondary-btn{
+  color: white !important;
   padding: 12px 24px;
-  border: 0.5px solid var(--secondary-text-color);
-  color: var(--accent-color) !important;
-  font-weight: 700;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+  transition: 0.2s ease-out;
   border-radius: 6px;
 }
-.secondary-btn:hover{
-  background-color: var(--accent-color-dark);
+
+.primary-btn:hover {
+  background-color: var(--secondary-text-color);
+}
+
+.secondary-btn {
+  border: 0.5px solid var(--secondary-text-color);
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-weight: 700;
+  color: var(--primary-text-color) !important;
+  transition: 0.2s ease-out;
+}
+.secondary-btn:hover {
+  border-color: var(--accent-color);
   color: var(--accent-color) !important;
 }
+/* header section */
 .section-gap {
-  padding: 50px var(--padding-inline-section);
+  padding: 50px var(--padding-inline-section) 0;
 }
-/* he section */
+
 .header-left {
   width: 40vw;
   flex-direction: column;
   gap: 10px;
   align-items: start;
 }
+
 .header-right img {
- width: 100%;
+  width: 100%;
+}
+
+/* Company section */
+.company-section h4 {
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.logos {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logos img {
+  height: 46px;
+}
+
+/* feature section */
+.section-header {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.features-area {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 30%;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.feature-card img {
+  width: 55px;
+}
+.feature-card p {
+  text-align: center;
 }
